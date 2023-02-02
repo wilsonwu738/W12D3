@@ -1544,3 +1544,21 @@ NameError - undefined local variable or method `banana' for #<Api::SessionsContr
 Completed 500 Internal Server Error in 5ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 4258)
 
 
+Started GET "/api/session" for 127.0.0.1 at 2023-02-02 10:51:39 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-02 10:51:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/api/test?login" for 127.0.0.1 at 2023-02-02 10:52:02 -0500
+Started POST "/api/test?login" for 127.0.0.1 at 2023-02-02 10:52:17 -0500
+Started GET "/api/session" for 127.0.0.1 at 2023-02-02 11:03:30 -0500
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/session" for 127.0.0.1 at 2023-02-02 11:15:11 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-02 11:15:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/api/test?login" for 127.0.0.1 at 2023-02-02 11:15:23 -0500
+Started POST "/api/test?login!" for 127.0.0.1 at 2023-02-02 11:17:42 -0500
